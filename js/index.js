@@ -26,7 +26,7 @@ function calculateAll() {
   }
   
   let total = document.querySelector('#total-value span');
-  total.textContent = subTotal;
+  total.innerHTML = subTotal;
 }
 
 // ITERATION 4
@@ -46,6 +46,14 @@ function createProduct() {
 window.addEventListener('load', () => {
   const calculatePricesBtn = document.getElementById('calculate');
   calculatePricesBtn.addEventListener('click', calculateAll);
+
+  const removeBtn = document.querySelector('.btn-remove');
+  
+  // for (let i = 0; i < removeBtn.length; i++) {
+  //   removeBtn.addEventListener('clic', function(
+      
+  //   ))
+  // }
 
   //... your code goes here
 });
