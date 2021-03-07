@@ -18,10 +18,16 @@ function updateSubtotal(product) {
 }
 
 function calculateAll() {
+
+  let singleProduct = document.getElementsByClassName('product');
+  
+  for (let i=0; i<singleProduct.length; i++) {
+    updateSubtotal(singleProduct[i]);
+  }
   // code in the following two lines is added just for testing purposes.
   // it runs when only iteration 1 is completed. at later point, it can be removed.
-  const singleProduct = document.querySelector('.product');
-  updateSubtotal(singleProduct);
+  // const singleProduct = document.querySelector('.product');
+  // updateSubtotal(singleProduct);
   // end of test
 
   // ITERATION 2
